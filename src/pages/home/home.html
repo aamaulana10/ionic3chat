@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Chatting App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+	<p>Input Your Username</p>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button block outline (click)="signin()">Sign In</button>
+</div>
 </ion-content>
