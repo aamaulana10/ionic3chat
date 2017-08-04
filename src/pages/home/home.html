@@ -1,25 +1,12 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Chatting App
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
-	<p>Input Your Username</p>
-
-  <ion-list>
-
-  <ion-item>
-    <ion-label>Username</ion-label>
-    <ion-input type="text" [(ngModel)]="username"></ion-input>
-  </ion-item>
-
-</ion-list>
-
-<div padding>
-  <button ion-button block outline (click)="signin()">Sign In</button>
-</div>
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      Welcome
+      <div class="username">{{ message.email }}</div>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+  <button class="bottom" ion-button clear full color="light" (click)="register()">Mulai chat</button>
 </ion-content>

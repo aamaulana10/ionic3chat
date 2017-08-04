@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="background">
+	<ion-card>
+		<ion-card-header>
+			Register Your Account
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+				<ion-item>
+					<ion-input type="text" placeholder="Email" [(ngModel)]="email"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+				</ion-item>
+				<button ion-button block outline color="light" (click)="register()">Register</button>
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

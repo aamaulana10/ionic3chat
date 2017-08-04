@@ -7,8 +7,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ChatPage } from '../pages/chat/chat';
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
     var config = {
         apiKey: "AIzaSyAEjcpBhEBW9WqkZoAxL-aym01Ij4p9GvI",
@@ -23,19 +26,24 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
   declarations: [
     MyApp,
     HomePage,
-    ChatPage
+    ChatPage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(config),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ChatPage
+    ChatPage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
